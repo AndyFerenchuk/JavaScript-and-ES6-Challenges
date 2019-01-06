@@ -10,6 +10,15 @@ Use ES6 whenever possible.
 
 // Write code here
 
+function sum(arg) {
+    var res = 0;
+    for (var i in arguments) {
+        res += arguments[i];
+    }
+    console.log(res);
+    return res;
+}
+
 sum(1, 3);
 //4
 
